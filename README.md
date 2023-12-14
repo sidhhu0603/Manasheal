@@ -5,8 +5,8 @@ Theme:-Healthcare                                                               
 Team Members:-
 Kirti Eppanapelli [Leader]
 Ruchita Dalvi [Member]
-Siddhant Bhoi
-Shubham Jha
+Siddhant Bhoi [Member]
+Shubham Jha [Member]
 
 
 ●	Why we choose this topic:-
