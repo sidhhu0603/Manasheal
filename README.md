@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+Aura Hackathon 2023-24
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Theme:-Healthcare                                                                  Team Name:-Phoenix
 
-## Available Scripts
+Team Members:-
+Kirti Eppanapelli [Leader]
+Ruchita Dalvi [Member]
+Siddhant Bhoi
+Shubham Jha
 
-In the project directory, you can run:
 
-### `npm start`
+●	Why we choose this topic:-
+We chose this hackathon topic because it blends our collective passion with a real-world issue. It presents a challenge that excites us and aligns with our combined skill set, offering an opportunity to learn and innovate together. Working on this project not only allows us to grow but also holds the potential for a meaningful impact, either by addressing a pressing problem or by exploring new possibilities within the given timeframe.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Front-end : React JS 
+Back-end : Firebase
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Web-App Name: MANASHEAL
 
-### `npm run build`
+ 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+●	Features:-
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+MatchMaking Form- A TypeForm which includes a set of questions and suggests you a relatable therapist regarding your concerns.
 
-### `npm run eject`
+Self-Evaluation Form- A Form in Which based on certain questions you can get an basic idea about your conditions (Data is not 100% Accurate) and based on that suggestions are provided to overcome that problem.
+  
+Multi-Lingual- Our Website provides has an effective feature of Multi-lingual which can be beneficial for people from different regions and promote DIVERSITY.  
+ 
+ChatBot- The project also includes a chatbot which will allows user to communicate to the therapists for the cause they wanted to seek for.
+ 
+Blogs- Adding Experiences is also an option available for the user to share with us. It’s protected with authentication as user will have a signin option through google for adding an experience.
+ 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Installalation
+Prerequisites
+●	Web browser (Chrome.)
+Installation Steps
+1.	Clone the repository: git clone https://github.com/mental-health-care.git
+2.	Navigate to the project directory.
+3.	npm install
+4.	npm start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   
+Contact
+eppkirti@gmail.com
+ruchitadalvi20@gmail.com
+siddhantbhoi03@gmail.com
+jha132003@gmail.com 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
