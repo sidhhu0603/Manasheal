@@ -1,0 +1,16 @@
+.sidebar {
+    /* existing styles */
+  }
+  
+  .icon {
+    margin-top: 10px; /* Add top margin to icons */
+    display: flex;
+    align-items: center; /* Vertically center the icon */
+  }
+  
+  .link_text {
+    /* existing styles */
+    display: flex;
+    align-items: center; /* Vertically center the text */
+  }
+  
