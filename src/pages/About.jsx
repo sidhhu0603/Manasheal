@@ -181,7 +181,7 @@ function About() {
               <p data-aos="fade-up" data-aos-delay="100" style={pStyle}>We understand that Mental Health is an <b>integral part</b> of our overall well-being. We aim to provide a <b>safe and supportive space</b> where individuals can find <b>resources, information, and a community</b> to help navigate the complexities of mental health.<br /><br />
                 We are a team of passionate <b>mental health professionals, advocates, and individuals</b> who have experienced the impact of mental health challenges firsthand.<br /><br /> Our collective goal is to break down the <b>stigma surrounding</b> mental health, foster understanding, and empower individuals to prioritize their mental well-being.</p>
               <div className="d-flex" data-aos="fade-up" data-aos-delay="200">
-                <a href="Exhibition.html" className="btn-book-a-table" style={buttonStyle}>More Details</a>
+                <a href="https://youtu.be/FpYblKqq6ig?si=neYDLpkb7LExUCPG" className="btn-book-a-table" style={buttonStyle}>More Details</a>
               </div>
             </div>
             <div className="col-lg-5 mx-auto p-2 order-1 order-lg-2 text-center text-lg-start" style={{marginTop:'85px'}} >
