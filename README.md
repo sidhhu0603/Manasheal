@@ -128,7 +128,7 @@ https://manasheal.netlify.app/
 &nbsp;
 
 ## Demo
-https://vimeo.com/900227762?share=copy
+[MANASHEAL](https://vimeo.com/900227762?share=copy)
 
 &nbsp;
 
