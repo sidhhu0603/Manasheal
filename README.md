@@ -39,6 +39,7 @@ https://manasheal.netlify.app/
 - **Therapist Directory:** Connect with experienced therapists and mental health professionals who can support you on your path to healing.
 
 - **Personalized Recommendations:** Receive personalized recommendations based on your preferences and mental health goals.
+  
 &nbsp;
 
 ## Installation
