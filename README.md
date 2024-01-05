@@ -38,10 +38,6 @@ https://manasheal.netlify.app/
 
 - **Therapist Directory:** Connect with experienced therapists and mental health professionals who can support you on your path to healing.
 
-- **Resource Library:** Access a curated collection of articles, videos, and resources to enhance your understanding of mental health.
-
-- **Community Forums:** Join discussions, share experiences, and find a supportive community of individuals facing similar challenges.
-
 - **Personalized Recommendations:** Receive personalized recommendations based on your preferences and mental health goals.
 &nbsp;
 
