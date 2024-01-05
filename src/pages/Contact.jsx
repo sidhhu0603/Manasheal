@@ -3,8 +3,7 @@ import './Contact.css';
 import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { IoCall } from "react-icons/io5";
-import Hero from '../Components/Hero/Hero';
-import Footer from '../Components/Footer/Footer';
+
 
 const Contact = () => {
 
@@ -55,8 +54,7 @@ const Contact = () => {
 
                 <div className="col-lg-6">
                   <form
-                    action={`${process.env.PUBLIC_URL}/src/forms/contact.php`}
-                    method="post"
+                    action={`${process.env.PUBLIC_URL}/`}
                     role="form"
                     className="php-email-form"
                   >

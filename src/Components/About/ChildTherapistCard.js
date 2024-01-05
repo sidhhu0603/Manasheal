@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect} from "react";
 import "./CardTherapist.css";
 import TherapistData from "./TherapistData";
 import person from "../images/person.png";
@@ -17,20 +17,24 @@ function ChildTherapistCard() {
   ];
 
 
-  const [isScriptLoaded, setScriptLoaded] = useState(false);
-  const loadScript = () => {
-    const script = document.createElement('script');
-    script.src = '//embed.typeform.com/next/embed.js';
-    script.async = true;
-    script.onload = () => {
-      setScriptLoaded(true);
-    };
-    document.body.appendChild(script);
-  };
+  const TypeForm = () => {
+    useEffect(() => {
+      // Load Typeform embed script
+      const script = document.createElement('script');
+      script.src = '//embed.typeform.com/next/embed.js';
+      script.async = true;
+      document.body.appendChild(script);
 
-  const typeformJSX = (
-    <div data-tf-live="01HHJKZWD2ST89SEYYG6A8V0T1"></div>
-  )
+      // Cleanup script on component unmount
+      return () => {
+        document.body.removeChild(script);
+      };
+    }, []); // Run effect only once on component mount
+
+    return (
+      <div data-tf-live="01HHJKZWD2ST89SEYYG6A8V0T1"></div>
+    );
+  };
   return (
     <div className="container">
         <div className="therapist">
@@ -62,8 +66,9 @@ function ChildTherapistCard() {
 
                 
             </div>
-            <button className="match" onClick={loadScript}> Get Matched Now</button>
-            {isScriptLoaded && typeformJSX}
+            <div className="match1">
+              <TypeForm/>
+            </div>
         </div>
     </div>
   );

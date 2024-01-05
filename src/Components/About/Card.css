@@ -20,7 +20,7 @@
     flex-wrap: wrap;
 }
 
-.span2 {
+.serviced {
     display: inline-flex;
     width: 120px;
     height: 3px;
@@ -85,6 +85,7 @@
     margin-top: 0.5rem;
     text-align: center;
 }
+
 
 /* Media queries for responsiveness */
 

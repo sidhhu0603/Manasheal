@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import './Home.css';
 
 import DepressionCard from '../Components/Test/DepressionCard';
@@ -25,22 +25,24 @@ const Home = () => {
   };
 
 
-    const [isScriptLoaded, setScriptLoaded] = useState(false);
-
-    const loadScript = () => {
+  const TypeForm = () => {
+    useEffect(() => {
+      // Load Typeform embed script
       const script = document.createElement('script');
       script.src = '//embed.typeform.com/next/embed.js';
       script.async = true;
-      script.onload = () => {
-        setScriptLoaded(true);
-      };
       document.body.appendChild(script);
-    };
 
-    const typeformJSX = (
+      // Cleanup script on component unmount
+      return () => {
+        document.body.removeChild(script);
+      };
+    }, []); // Run effect only once on component mount
+
+    return (
       <div data-tf-live="01HHJKZWD2ST89SEYYG6A8V0T1"></div>
-    )
-
+    );
+  };
 
   
 
@@ -93,8 +95,9 @@ const Home = () => {
                         <BiCheckboxChecked size={30} color="#333" /> More Than 35 Years of Expertise in the Field
                     </p>
                     
-                    <button className="btn btn-matchnow" onClick={loadScript} >GET MATCH NOW</button>
-                    {isScriptLoaded && typeformJSX}
+                    <div className='matching'>
+                      <TypeForm/>
+                    </div>
                   </div>
                 <div style={{  overflow: 'hidden', width:'600px', height:'500px', marginLeft:'80px' }} className="col-lg-5 order-1 order-lg-2 text-center text-lg-start mx-4 flex-fill" data-aos="fade-left" data-aos-delay="200">
                   <img src='https://plus.unsplash.com/premium_photo-1664378616928-dc6842677183?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fHRoZXJhcHl8ZW58MHx8MHx8fDA%3D' style={{height:'400px', width:'600px'}} ></img>

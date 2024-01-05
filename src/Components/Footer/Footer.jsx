@@ -59,9 +59,9 @@ function Footer() {
       </div>
 
       <div className="text-center p-3" style={{backgroundColor:'#333d55', color:'white'}} >
-        © 2020 Copyright:
-        <a className="text-body" href="https://mdbootstrap.com/" class="link-light" >
-          MDBootstrap.com
+        © 2023 Copyright:
+        <a className="text-body" href="#" class="link-light" >
+          Manasheal.com
         </a>
       </div>
     </footer>

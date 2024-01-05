@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import "./CardTherapist.css";
 import TherapistData from "./TherapistData";
 import person from "../images/person.png";
@@ -15,21 +15,26 @@ function CardTherapist() {
     // Add more social links as needed
   ];
 
-  const [isScriptLoaded, setScriptLoaded] = useState(false);
+  
 
-    const loadScript = () => {
+  const TypeForm = () => {
+    useEffect(() => {
+      // Load Typeform embed script
       const script = document.createElement('script');
       script.src = '//embed.typeform.com/next/embed.js';
       script.async = true;
-      script.onload = () => {
-        setScriptLoaded(true);
-      };
       document.body.appendChild(script);
-    };
 
-    const typeformJSX = (
+      // Cleanup script on component unmount
+      return () => {
+        document.body.removeChild(script);
+      };
+    }, []); // Run effect only once on component mount
+
+    return (
       <div data-tf-live="01HHJKZWD2ST89SEYYG6A8V0T1"></div>
-    )
+    );
+  };
 
 
 
@@ -40,7 +45,7 @@ function CardTherapist() {
             <h3>Healing Team Ensemble </h3>
             <h1>Introducing Our Adult Therapist Team</h1>
             <p> Trained in leading global therapies, our diverse team of adult counseling therapists genuinely cares about guiding you toward your goals.</p>
-            <span2></span2>
+            <span className='doctor'></span>
             <div className="therapistcard">
                 <TherapistData
                 img={person1}
@@ -65,8 +70,10 @@ function CardTherapist() {
 
                 
             </div>
-            <button className="match" onClick={loadScript}> Get Matched Now</button>
-            {isScriptLoaded && typeformJSX}
+            <div className="match1">
+              <TypeForm/>
+            </div>
+          
 
         </div>
     </div>

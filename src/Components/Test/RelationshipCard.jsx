@@ -1,24 +1,27 @@
-import React, {useState} from 'react';
+import React, {useEffect} from 'react';
 import './card.css';
 
-const RelationshipCard = ({ imgSrc, title, description, linkText, linkHref }) => {
+const RelationshipCard = () => {
 
   
-  const [isScriptLoaded, setScriptLoaded] = useState(false);
+  const TypeForm = () => {
+    useEffect(() => {
+      
+      const script = document.createElement('script');
+      script.src = '//embed.typeform.com/next/embed.js';
+      script.async = true;
+      document.body.appendChild(script);
 
-  const loadScript = () => {
-    const script = document.createElement('script');
-    script.src = '//embed.typeform.com/next/embed.js';
-    script.async = true;
-    script.onload = () => {
-      setScriptLoaded(true);
-    };
-    document.body.appendChild(script);
+      
+      return () => {
+        document.body.removeChild(script);
+      };
+    }, []); 
+
+    return (
+      <div data-tf-live="01HHJBHMFMZ56T8XPCH8YBC9ZD"></div>
+    );
   };
-
-  const typeformJSX = (
-    <div data-tf-live="01HHJBHMFMZ56T8XPCH8YBC9ZD"></div>
-  )
 
   return (
     <div className="col ">
@@ -31,8 +34,7 @@ const RelationshipCard = ({ imgSrc, title, description, linkText, linkHref }) =>
             <br />
           </p>
           <div className='btn-div' >
-          <button className="btn btn-test" onClick={loadScript} >START TEST</button>
-          {isScriptLoaded && typeformJSX}
+            <TypeForm/>
           </div>
           
         </div>

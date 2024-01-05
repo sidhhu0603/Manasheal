@@ -1,19 +1,16 @@
 import React, { useEffect } from 'react';
 import { NavLink } from "react-router-dom";
-import { FaBars, FaBookMedical, FaHome, FaLock, FaMoneyBill, FaUser } from "react-icons/fa";
+import { FaBars, FaBookMedical, FaHome,  FaLanguage,  FaUser } from "react-icons/fa";
 import { FaHandHoldingHeart } from 'react-icons/fa';
 import { BsFillPostcardFill, BsPersonAdd } from 'react-icons/bs';
-import { MdAddAPhoto, MdChildCare, MdPostAdd } from 'react-icons/md';
-import { BiAnalyse, BiSolidContact } from "react-icons/bi";
-import { BiCog } from "react-icons/bi";
-import { AiFillHeart, AiTwotoneFileExclamation } from "react-icons/ai";
-import { BsCartCheck } from "react-icons/bs";
+import { MdAddAPhoto, MdChildCare,  } from 'react-icons/md';
+import {  BiSolidContact } from "react-icons/bi";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import SidebarMenu from "./SidebarMenu";
-import { FaBlog, FaBlogger } from 'react-icons/fa6';
+import { FaBlog, } from 'react-icons/fa6';
 import Manasheal from "./MANSHEAL.png";
-
+import './SideBar.css'
 const routes = [
   {
     path: '/',
@@ -69,6 +66,7 @@ const routes = [
     name: 'Book Appointment',
     icon: <FaBookMedical />,
   },
+
 ];
 
 const SideBar = ({ children }) => {
@@ -107,7 +105,7 @@ const SideBar = ({ children }) => {
   useEffect(() => {
     // Load Google Translate script
     const script = document.createElement('script');
-    script.src = 'http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate';
+    script.src = 'https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate';
     script.async = true;
     document.head.appendChild(script);
 
@@ -144,7 +142,7 @@ const SideBar = ({ children }) => {
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                   >
-                    <img src={Manasheal} style={{ height: '100px', width: '100px' }} alt="Manasheal Logo" />
+                    <img src={Manasheal} style={{ height: '60px', width: '60px' }} alt="Manasheal Logo" />
                   </motion.span>
                 )}
               </AnimatePresence>
@@ -152,7 +150,9 @@ const SideBar = ({ children }) => {
             <div className="bars" onClick={toggleSidebar}>
               <FaBars />
             </div>
+            
           </div>
+          
           <section className="routes">
             {routes.map((route, index) => {
               if (route.subRoutes) {
@@ -195,7 +195,12 @@ const SideBar = ({ children }) => {
            
           </section>
           {/* Translation button */}
-          <div id="google_element"></div>
+          
+            <div id="google_element"></div>
+          
+          
+            
+          
         </motion.div>
       </div>
       <main>{children}</main>

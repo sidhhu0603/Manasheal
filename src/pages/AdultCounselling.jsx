@@ -100,7 +100,7 @@ import CounterUp from "../Components/CounterUp";
           heroimg={Adult}
           title="ADULT COUNSELLING"
           btnText="Connect Now"
-          url="/"
+          url="/contact"
           btnClass="show"
         />
         <Card/>

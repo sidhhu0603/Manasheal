@@ -4,7 +4,6 @@ import ChildTherapistCard from "../Components/About/ChildTherapistCard";
 import DepressionCard from "../Components/Test/DepressionCard";
 import RelationshipCard from "../Components/Test/RelationshipCard";
 import AngerCard from "../Components/Test/AngerCard";
-import Depression from "../Components/images/depression.png"
 import Footer from "../Components/Footer/Footer";
 import { FaHeart } from "react-icons/fa";
 import { BsBookFill } from "react-icons/bs";
@@ -95,19 +94,12 @@ import CounterUp from "../Components/CounterUp";
           
           `}
           </style>
-
-
-
-
-
-
-
         <Hero
           cName="hero"
           heroimg={Child}
           title="CHILD COUNSELLING"
           btnText="Connect Now"
-          url="/"
+          url="/contact"
           btnClass="show"
         />
         <ChildCard/>

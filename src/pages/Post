@@ -1,9 +1,0 @@
-<div className="postContent">
-                <img
-                  src={post.imgUrl}
-                  alt="Displayed Image"
-                  style={{ height: "200px", width: "200px" }}
-                />
-                <div className="postTextContainer"> {post.postText} </div>
-                <h3>@{post.author?.name || "Unknown Author"}</h3>
-              </div>

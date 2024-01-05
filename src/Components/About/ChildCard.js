@@ -15,7 +15,7 @@ function ChildCard(){
             <h3>We Bring To You </h3>
             <h1>Child Therapy Services</h1>
             <p>Utilizing practice-based therapeutic methods, our psychologists assist in overcoming challenges or delays experienced by your child or adolescent.</p>
-            <span ></span>
+            <span className="serviced" ></span>
             <div className="cardbody">
                 <Data
                 img={play}

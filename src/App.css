@@ -46,22 +46,6 @@ main {
   display: none;
 }
 
-.search {
-  display: flex;
-  align-items: center;
-  margin: 10px 0;
-  height: 30px;
-  padding: 10px;
-}
-.search input {
-  border: none;
-  margin-left: 10px;
-  border-radius: 5px;
-  background: rgb(238, 238, 238);
-
-  color: white;
-}
-
 .routes {
   margin-top: 15px;
   display: flex;
@@ -69,6 +53,8 @@ main {
   gap: 5px;
   
 }
+
+
 .link {
   display: flex;
   color: white;
@@ -118,4 +104,30 @@ main {
 .menu_container .link {
   padding-left: 20px;
   border-bottom: #fff 0.5px solid;
+}
+
+@media only screen and (max-width: 1200px) {
+  .sidebar {
+    background: #333d55;
+    color: white;
+    height: 100vh;
+    overflow-y: auto;
+    position: sticky;
+    top:0;
+    bottom:0;
+    z-index: 10000;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    background: #333d55;
+    color: white;
+    height: 100vh;
+    overflow-y: auto;
+    position: sticky;
+    top:0;
+    bottom:0;
+    z-index: 10000;
+  }
 }

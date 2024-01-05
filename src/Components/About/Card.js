@@ -15,7 +15,7 @@ function Card(){
             <h3>We Bring To You </h3>
             <h1>Adult Therapy Services</h1>
             <p>Explore our wide array of online counseling solutions and therapeutic services tailored to address your current worries and stressors.</p>
-            <span2 ></span2>
+            <span className="serviced" ></span>
             <div className="cardbody">
                 <Data
                 img={relation}

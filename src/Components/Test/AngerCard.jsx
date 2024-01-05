@@ -1,24 +1,26 @@
-import React, {useState} from 'react';
+import React, {useEffect} from 'react';
 import './card.css';
 
-const AngerCard = ({ imgSrc, title, description, linkText, linkHref }) => {
+const AngerCard = () => {
 
-  
-  const [isScriptLoaded, setScriptLoaded] = useState(false);
+  const TypeForm = () => {
+    useEffect(() => {
+      // Load Typeform embed script
+      const script = document.createElement('script');
+      script.src = '//embed.typeform.com/next/embed.js';
+      script.async = true;
+      document.body.appendChild(script);
 
-  const loadScript = () => {
-    const script = document.createElement('script');
-    script.src = '//embed.typeform.com/next/embed.js';
-    script.async = true;
-    script.onload = () => {
-      setScriptLoaded(true);
-    };
-    document.body.appendChild(script);
+      // Cleanup script on component unmount
+      return () => {
+        document.body.removeChild(script);
+      };
+    }, []); // Run effect only once on component mount
+
+    return (
+      <div data-tf-live="01HHJCRAAR8KJNHSXH675VPEVH"></div>
+    );
   };
-
-  const typeformJSX = (
-    <div data-tf-live="01HHJCRAAR8KJNHSXH675VPEVH"></div>
-  )
 
   return (
     <div className="col ">
@@ -31,8 +33,7 @@ const AngerCard = ({ imgSrc, title, description, linkText, linkHref }) => {
             <br />
           </p>
           <div className='btn-div' >
-          <button className="btn btn-test" onClick={loadScript} >START TEST</button>
-          {isScriptLoaded && typeformJSX}
+             <TypeForm/>
           </div>
           
         </div>

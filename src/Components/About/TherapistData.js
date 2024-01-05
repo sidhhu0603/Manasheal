@@ -12,11 +12,11 @@ function TherapistData(props) {
       <h4>{props.heading}</h4>
       <p>{props.text}</p>
       
-      {/* Social Links */}
+      
       <div className="social-links">
         {props.socialLinks && props.socialLinks.map((link, index) => (
           <a key={index} href={link.url} target="_blank" rel="noopener noreferrer">
-            {link.icon} {/* Render the icon directly */}
+            {link.icon} 
           </a>
         ))}
       </div>

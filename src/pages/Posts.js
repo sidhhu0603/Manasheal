@@ -58,12 +58,11 @@ function Posts({ isAuth, data }) {
             display: flex;
             justify-content: space-between;
             width: 100%;
-            
           }
 
           .postHeader .title {
-           padding:10px;
-           font-size:16px;
+            padding: 10px;
+            font-size: 16px;
           }
 
           .postHeader .deletePost {
@@ -85,7 +84,7 @@ function Posts({ isAuth, data }) {
             display: flex;
             flex-direction: column;
             gap: 10px;
-            width:100%
+            width: 100%;
           }
 
           .post .postTextContainer {
@@ -94,19 +93,17 @@ function Posts({ isAuth, data }) {
             max-height: 400px;
             overflow: hidden;
             overflow-y: auto;
-            bottom:50px;
+            bottom: 50px;
           }
 
-          .post .postTextContainer .h3{
+          .post .postTextContainer .h3 {
             word-wrap: break-word;
             height: auto;
             max-height: 400px;
             overflow: hidden;
             overflow-y: auto;
-            top:20px;
+            top: 20px;
           }
-
-
 
           .post .postTextContainer::-webkit-scrollbar {
             width: 10px;
@@ -120,12 +117,24 @@ function Posts({ isAuth, data }) {
           .post .postTextContainer::-webkit-scrollbar-track {
             background-color: #eee;
           }
+
+          @media only screen and (max-width: 1200px) {
+            .homePage .post {
+              width: calc(50% - 40px);
+            }
+          }
+
+          @media only screen and (max-width: 768px) {
+            .homePage .post {
+              width: calc(100% - 40px);
+            }
+          }
         `}
       </style>
       <div className="homePage">
         <Hero
           cName="hero"
-          heroimg={Blogimg} 
+          heroimg={Blogimg}
           title="Blogs"
           btnText="Connect Now"
           url="/contact"
@@ -138,12 +147,7 @@ function Posts({ isAuth, data }) {
           postLists.map((post) => (
             <div className="post" key={post.id}>
               <div className="postContent">
-                <img
-                  src={post.imgUrl}
-                  alt="Displayed Image"
-                  
-                />
-                
+                <img src={post.imgUrl} alt="Displayed Image" />
               </div>
 
               <div className="postHeader">
@@ -163,7 +167,7 @@ function Posts({ isAuth, data }) {
                 </div>
               </div>
               <div className="postTextContainer"> {post.postText} </div>
-                <h3>@{post.author?.name || "Unknown Author"}</h3>
+              <h3>@{post.author?.name || "Unknown Author"}</h3>
             </div>
           ))
         ) : (
