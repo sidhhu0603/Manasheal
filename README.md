@@ -1,6 +1,6 @@
 # [Manasheal](https://manasheal.netlify.app/)
 
-CodeEdu: WinterHacks 2023! it aimed at developing a solution that addresses any one of the United Nations' 17 Sustainable Development Goals. Our chosen goal is number 3 i.e. 'Ensure healthy lives and promote well-being for all at all ages.' 
+EduHacks! it aimed at developing a solution that addresses any one of the United Nations' 17 Sustainable Development Goals. Our chosen goal is number 3 i.e. 'Ensure healthy lives and promote well-being for all at all ages.' 
 Our project  'Manasheal,' is an initiative focused on mental health.
 
 Manasheal is a website designed to foster mental health awareness and support. Through innovative features and user-friendly interfaces, our project aims to contribute to the global effort of ensuring healthy lives and promoting well-being for individuals of all ages.
