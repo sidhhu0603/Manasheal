@@ -101,6 +101,12 @@ https://manasheal.netlify.app/
 ---
 &nbsp;
 ---
+- **About Page:**
+
+![image](https://github.com/sidhhu0603/Manasheal/assets/78198500/b3552ad7-e6ce-4efe-88ea-4ac513611871)
+---
+&nbsp;
+---
 - **Services:**
 
 ![image](https://github.com/sidhhu0603/Manasheal/assets/78198500/9f8b8cfd-bac0-4fa2-b091-c8058e110df0)
@@ -108,9 +114,40 @@ https://manasheal.netlify.app/
 &nbsp;
 ---
 - **Blogs:**
-
+  
 ![image](https://github.com/sidhhu0603/Manasheal/assets/78198500/650a3ad8-4fb7-47c9-b73c-08d6bc05df1c)
+---
+&nbsp;
+---
+- **Mental Health Prediction:**
 
+![image](https://github.com/sidhhu0603/Manasheal/assets/78198500/048c9425-6c6c-41db-9a6c-46cb18d13662)
+![image](https://github.com/sidhhu0603/Manasheal/assets/78198500/047b6731-bf42-42e9-8322-83bfc86f2bf3)
+---
+&nbsp;
+---
+- **Mental Health Track:**
+
+![image](https://github.com/sidhhu0603/Manasheal/assets/78198500/eeeacdac-01ec-4bb9-861e-2db15ca77939)
+---
+&nbsp;
+---
+- **Therapist Recommendation:**
+
+![image](https://github.com/sidhhu0603/Manasheal/assets/78198500/16fcae50-9dc9-4a11-b681-96afe71e13c6)
+---
+&nbsp;
+---
+- **Chatbot:**
+
+![image](https://github.com/sidhhu0603/Manasheal/assets/78198500/6493b765-2aea-4c6a-b8d8-fa40e59b8f2a)
+![image](https://github.com/sidhhu0603/Manasheal/assets/78198500/b90f06fe-c101-4253-8be7-224ddb413a0d)
+---
+&nbsp;
+---
+- **Contact Us:**
+
+![image](https://github.com/sidhhu0603/Manasheal/assets/78198500/55016a23-546b-4fa1-b401-6293613e5146)
 ---
 &nbsp;
 ---
@@ -126,9 +163,6 @@ https://manasheal.netlify.app/
 ---
 
 &nbsp;
-
-## Demo
-[MANASHEAL](https://vimeo.com/900227762?share=copy)
 
 &nbsp;
 
